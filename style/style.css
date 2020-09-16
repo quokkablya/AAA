@@ -1,0 +1,246 @@
+    html, body {
+        background: linear-gradient(white, #DADADA) fixed;
+        box-sizing: border-box;
+        min-height: 100vh;
+        /*overflow: hidden;*/
+        margin: 0px;
+        font-family: 'Roboto';
+        overflow-x: hidden;
+        } 
+
+
+        /*ХЗ зачем, для центровки видимо*/
+.wrapper {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-grow: 1;
+}
+        /*Лого при запуске*/
+.main-logo {
+    text-align: center;
+    }
+        /*Отсуп прелоудера от логотипа*/
+.main-logo img{
+    margin-top: 70px;
+}
+        /*картинка на главной странице*/
+.bgimg {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 140px;
+    z-index: 1000;
+
+}
+.bgimg-img {
+    width: 100px;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+        /*Центровка второй страницы*/
+.choice {
+    text-align: center;
+        
+        /*Желтая рамка на второй странице*/
+}
+.block {
+    border: 8px solid #FFCC00;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:272px;
+    height:184px;
+    margin-top: 10px;
+   position: relative;
+}
+        /*Картинка 1 в желтой рамке*/
+.block1{
+    background: url(../img/chel.png);
+}
+
+        /*Картинка 2 в желтой рамке*/
+.block2 {
+    background: url(../img/gr.png) no-repeat;
+}
+
+        /*Правильное расположение блоков второй страницы*/
+.block span{
+   position: absolute;
+   left: 50%;
+   top: 35%;
+   transform: translateY(-50%);
+   transform: translateX(-50%);
+   background-color: #FFCC00;
+   border-radius: 12px;
+   opacity: 0.9;
+   padding: 13px 5px;
+   text-decoration: none;
+   min-width: 150px;
+}
+        /*Текст*/
+.text{
+    font-family: 'Roboto';
+    color: #2F40D8;
+}
+.texth {
+    color: black;
+}
+
+.textd {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.textw{
+    font-family: 'Roboto';
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+}
+    /*Стиль на кнопки*/
+   .knop {
+    border: 1px solid #2F40D8; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff; /* Цвет текста */
+  }
+   .knop:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Тень */
+    background: #2F40D8;
+    padding: 5px 15px;
+}
+    /*Размещение кнопок на странице*/
+    .knopHis{
+        margin-left: 10px;
+    }
+
+    .knoplc{
+        float: right;
+        margin-right: 10px;
+    }
+
+    .knopcenter {
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+   
+
+.please{
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px;
+}
+
+.neworder {
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.FIO {
+    background-color: rgb(196, 187, 218);
+    border-bottom: 3px #2F40D8 solid;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px;
+}
+
+.FIO label{
+    display: block;
+}
+
+.pole {
+    background-color: rgb(196, 187, 218); 
+    border: none;
+}
+
+.error{
+    color: rgb(224, 14, 14);
+    padding: 5px 0px 0px 10px;
+}
+
+.center>div{
+    margin: 12px;
+}
+
+button{
+    width: 100px;
+}
+  
+  /* Нижнее Меню */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    height: 65px;
+    width: 100%;
+    background: #e8e9ee;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+
+.menu a {
+    display: flex;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    margin-top: 8px;
+}
+
+.menu-on {
+    border-bottom: 2px solid #2F40D8;
+}
+
+.menu-icon {
+    height: 28px;
+    width: 28px;
+    margin: auto;
+}
+
+.menu-iconp:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Тень */
+    background: #2F40D8;
+    padding: 5px 15px;
+}
+
+/*Дата и Время*/
+
+label {
+    display: block;
+    font: 1rem 'Roboto' 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+/*textarea*/
+
+.areaedit {
+    width: 60%;
+    padding: 10px;
+}     
+/*Выбор количества рабочих*/           
+.raz {
+    all: unset;
+    -moz-appearance: textfield;
+    width: 3em;
+    text-align: center;
+  }
+  .raz::-webkit-inner-spin-button { 
+    display: none;
+  }              

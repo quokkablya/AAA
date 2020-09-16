@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--<div class="header">
+        <a href="index.html"><span class="texth regular22">Loaders</span></a>
+    </div>-->
+    <!--<div>
+        <button class="lc lclc">Личный кабинет</button>
+        <button class="lc lchis">История заказов</button>--> <!--Добавь float и маргин тут вправо а там влево
+    </div>-->
+    <p class="please regular22">Пожалуйста, заполните обязательные поля.</p>
+    <form action="handler.php">
+        <div class="center">
+                    <div>
+                        <div class="FIO">
+                            <label for="fio" class="text regular15">Ваше Имя:</label>
+                            <input class="texth pole" placeholder="Как ваше Имя?" name="fio" required>
+                        </div>
+                        <div class="error regular12">Пожалуйста, заполните поле</div>
+                    </div>
+
+                    <div>
+                        <div class="FIO">
+                            <label class="text regular15">Ваш Фамилия:</label>
+                            <input class="texth pole" placeholder="Какая у вас Фамилия?"required>
+                        </div>
+                            <div class="error regular12">Пожалуйста, заполните поле</div>
+                    </div>
+
+                    <div>
+                        <div class="FIO">
+                            <label class="text regular15">Ваш город :</label>
+                            <input class="texth pole" placeholder="Укажите свой город"required>
+                        </div>
+                            <div class="error regular12">Пожалуйста, заполните поле</div>
+                    </div>
+
+                    <div>
+                        <div class="FIO">
+                            <label class="text regular15">Ваш телефон:</label>
+                            <input  pattern="2[0-9]{3}-[0-9]{3}" class="texth pole" placeholder="8999000000"required>
+                        </div>
+                        <div class="error regular12">Пожалуйста, заполните поле</div>
+                    </div>                        
+                    
+                    <div><button class="knop">Отправить</button></div>
+
+                    <div>
+                        <div class="FIO">
+                            <label class="text regular15">Введите код из СМС:</label>
+                            <input class="texth pole" placeholder="Код"required>
+                        </div>
+                        <div class="error regular12">Пожалуйста, заполните поле</div>
+                    </div>
+
+            <div>
+                <div class="FIO">
+                    <label class="text regular15">Количество людей в вашей команде:</label>
+                    <input class="texth pole" placeholder="Укажите количество"required>
+                </div>
+                        <div class="error regular12">Пожалуйста, заполните поле</div>
+            </div>
+
+            <div><button class="">Готово</button></div>
+        </div>
+    </form>
+    </body>
+</html>

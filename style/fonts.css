@@ -1,0 +1,166 @@
+/*100 Ultra Light*/
+/*200 Thin*/
+/*300 Light*/
+/*400 Regular, Normal*/
+/*500 Roman*/
+/*600 Medium, SemiBold*/
+/*700 Bold*/
+/*800 Heavy, ExtraBold*/
+/*900 Black*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url("roboto/Roboto-Black.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("roboto/Roboto-Light.ttf");
+    font-weight: 300;
+    }
+
+@font-face {
+        font-family: "Roboto";
+        src: url("roboto/Roboto-Medium.ttf");
+        font-weight: 600;
+    }
+
+@font-face {
+        font-family: "Roboto";
+        src: url("roboto/Roboto-Regular.ttf");
+        font-weight: 400;
+    }
+
+@font-face {
+        font-family: "Roboto";
+        src: url("roboto/Roboto-Thin.ttf");
+        font-weight: 200;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 667px) {
+        .regular28 {
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        .regular24{
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .regular22{
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .regular20 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .regular17 {
+            font-size: 17px;
+            font-weight: 400;
+        }
+        .regular15 {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .regular12 {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .light15 {
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .light11 {
+            font-size: 11px;
+            font-weight: 300;
+        }
+        .medium20 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .medium22 {
+            font-size: 22px;
+            font-weight: 600;
+    }
+    
+    /* iPhone 6+, 6S+, 7+, 8+ */
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+    
+        .regular28 {
+            font-size: 30px;
+            font-weight: 400;
+        }
+        .regular20 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .regular17 {
+            font-size: 19px;
+            font-weight: 400;
+        }
+        .regular15 {
+            font-size: 17px;
+            font-weight: 400;
+        }
+        .light18 {
+            font-size: 19px;
+            font-weight: 300;
+        }
+        .light15 {
+            font-size: 17px;
+            font-weight: 300;
+        }
+        .light11 {
+            font-size: 13px;
+            font-weight: 300;
+        }
+        .medium20 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    
+    /*iPad Pro*/
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .regular28 {
+            font-size: 34px;
+            font-weight: 400;
+        }
+        .regular20 {
+            font-size: 26px;
+            font-weight: 400;
+        }
+        .regular17 {
+            font-size: 23px;
+            font-weight: 400;
+        }
+        .regular15 {
+            font-size: 21px;
+            font-weight: 400;
+        }
+        .light15 {
+            font-size: 21px;
+            font-weight: 300;
+        }
+        .light11 {
+            font-size: 17px;
+            font-weight: 300;
+        }
+        .medium20 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+    }
+}

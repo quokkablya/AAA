@@ -1,0 +1,71 @@
+<div class="tabham"></div>
+<div class="tabs">
+    <div class="tab tabopen">
+        Home
+    </div>
+    <div class="tab">
+        Mail
+    </div>
+    <div class="tab">
+        Location
+    </div>
+    <div class="tab">
+        Info
+    </div>
+</div>
+<div class="bgimg">
+    <img class="bgimg-img"  src="img/del.png" alt=""></div>
+<script src="script/tabbar.js"></script>
+
+
+<!--<div class="header">
+        <a href="index.html"><span class="texth regular22">Loaders</span></a>
+    </div>-->
+    <!--<div>
+        <button class="lc lclc">Личный кабинет</button>
+        <button class="lc lchis">История заказов</button>-->
+    <!--Добавь float и маргин тут вправо а там влево
+    </div>-->
+
+    /*Tab menu не используется*/
+.tabs {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width: 100%;
+    height: 50px;
+      z-index: 1000;
+      background-color: #FFCC00;
+      z-index: 1;
+  }
+  
+  .tabopen {
+      border-bottom: 5px #2F40D8 solid;
+  }
+  
+  .tab {
+    font-family: Roboto;
+      float: left;
+      width: 25% !important;
+      height: 60% !important;
+    padding-top:15px;
+    color: #000000;
+    text-align: center;
+    
+  }
+
+  /*Шапка*/ 
+  .header{
+      height: 50px;
+      background-color: #FFCC00;
+      margin: 0px 0px 10px 0px;
+      position: relative;
+      text-decoration: none;
+  }
+
+  /*Надпись в шапке*/
+  .header span{
+      position: absolute;
+      left: 3%;
+      top: 25%;
+  }
