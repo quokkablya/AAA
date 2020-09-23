@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="app-center">
+        <div class="app-status-c app-status-с-nt regular24">Статус: Завершен</div> 
+            <div class="app-status-nt-p">
+                <span class="app-status-j regular15">Поздравляем! Ваш заказ завершен.</span>
+                <span class="app-status-j regular15">Можете использовать любой удобный способ расчета.
+                    Также Вы можете оставить отзыв и оценку ниже. Благодарим!</span>
+                <span class="app-status-j regular15">Общая сумма к оплате:<b> 300р.</b></span>
+            </div>
+            
+            <div class="app-status-c app-status-с-nt">
+                <span class="app-status-j regular11">Пожалуйста, оставьте свой отзыв.</span>
+                
+                    <textarea class="app-area" placeholder="Написать..." rows="4" cols="10" name="text"></textarea>
+                
+                        <div class="rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>	
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>    
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>  
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>    
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+            </div>
+
+            <div>              
+                <a href="details-order.html" class="app-button app-botton-l">Детали заявки</a>
+                <a href="main-page-first.html" class="app-button app-botton-r">Завершить</a>
+            </div>
+    </div>
+
+
+    <div class="mpf-menu">
+        <a href="history.html" class="mpf-menu-item" id="send" onclick="paramChange('mpf-menu', 'history')">
+            <img class="mpf-menu-icon" src="ico/clock.png">
+        </a>
+        <a href="main-page-first.html" class="mpf-menu-item menu-on" id="client" onclick="paramChange('mpf-menu', 'orders')">
+            <img class="mpf-menu-icon" src="ico/boxes.png">
+        </a>
+        <a href="settings.html" class="mpf-menu-item" id="list" onclick="paramChange('mpf-menu', 'settings')">
+            <img class="mpf-menu-icon" src="ico/settings.png">
+        </a>
+    </div>
+
+</body>
+</html>
+
+    

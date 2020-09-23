@@ -10,37 +10,37 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("roboto/Roboto-Black.ttf");
+    src: url("../roboto/Roboto-Black.ttf");
     font-weight: 900;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("roboto/Roboto-Bold.ttf");
+    src: url("../roboto/Roboto-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("roboto/Roboto-Light.ttf");
+    src: url("../roboto/Roboto-Light.ttf");
     font-weight: 300;
     }
 
 @font-face {
         font-family: "Roboto";
-        src: url("roboto/Roboto-Medium.ttf");
+        src: url("../roboto/Roboto-Medium.ttf");
         font-weight: 600;
     }
 
 @font-face {
         font-family: "Roboto";
-        src: url("roboto/Roboto-Regular.ttf");
+        src: url("../roboto/Roboto-Regular.ttf");
         font-weight: 400;
     }
 
 @font-face {
         font-family: "Roboto";
-        src: url("roboto/Roboto-Thin.ttf");
+        src: url("../roboto/Roboto-Thin.ttf");
         font-weight: 200;
     }
 
@@ -76,6 +76,11 @@
         .regular12 {
             font-size: 12px;
             font-weight: 400;
+        }
+
+        .light17 {
+            font-size: 17px;
+            font-weight: 300;
         }
 
         .light15 {
@@ -114,7 +119,7 @@
             font-size: 17px;
             font-weight: 400;
         }
-        .light18 {
+        .light17 {
             font-size: 19px;
             font-weight: 300;
         }

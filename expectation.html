@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="ex-center">
+        <div class="ex-status-c ex-status-с-nt regular24">Статус: Ожидание</div> 
+        <div class="ex-status-nt-p">
+            <span class="ex-status-j regular15">Ваша заявка принята в обработку!</span>
+            <div class="ex-status-j regular15"><span>Номер Вашего заказа:</span><b> 0001</b></div>
+            <div class="ex-status-j regular15"><span>Вскоре с Вами свяжется:</span><b> Иван</b></div>
+            <div>
+                <div class="ex-status-l regular12"><b>Пожалуйста, не забудьте проверить время начала и окончания работ!</b></div>
+                <div class="ex-status-l regular12"><b>Вы получите уведомление в приложении и по СМС.</b></div>
+            </div>
+        </div>
+
+        <span class="ex-status-l regular15"><b>Номер ответственного:</b> Иван</span>
+        <form class="ex-status-call">
+            <input class="ex-status-с-nt ex-status-l" type="number" step="0.01" min="0"  placeholder="+7 (999) 123-45-67">
+            <a href="tel:+7 (999) 123-45-67" class="ex-button" style="display: inline-block;">Позвонить</a>
+        </form>
+
+            <div>              
+                <a href="details-order.html" class="ex-button ex-botton-l">Детали заявки</a>
+                <a href="found-executor.html" class="ex-button ex-botton-r">Обновить</a>
+            </div>
+            <div>
+                <a href="main-page-first.html " class="ex-button ex-botton-cancel">Отменить</a> <!-- Не захотела вставать по середине  -->
+            </div>
+    </div>
+
+    <div class="mpf-menu">
+
+        <a href="history.html" class="mpf-menu-item" id="send" onclick="paramChange('mpf-menu', 'history')">
+            <img class="mpf-menu-icon" src="ico/clock.png">
+        </a>
+        <a href="main-page-first.html" class="mpf-menu-item menu-on" id="client" onclick="paramChange('mpf-menu', 'orders')">
+            <img class="mpf-menu-icon" src="ico/boxes.png">
+        </a>
+        <a href="settings.html" class="mpf-menu-item" id="list" onclick="paramChange('mpf-menu', 'settings')">
+            <img class="mpf-menu-icon" src="ico/settings.png">
+        </a>
+    </div>
+
+</body>
+
+</html>

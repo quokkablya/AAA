@@ -1,4 +1,4 @@
-let gotovo = document.getElementById("gotovo");
-gotovo.addEventListener("click", function() {
-    document.location.href = "glavk.html";
+let ready = document.getElementById("ready");
+ready.addEventListener("click", function() {
+    document.location.href = "main-page-first.html";
 })

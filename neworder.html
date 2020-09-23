@@ -10,38 +10,26 @@
 </head>
 
 <body>
-    <div class="menu">
-
-        <a href="#" class="menu-item" id="send" onclick="paramChange('menu', 'home')">
-            <img class="menu-icon" src="ico/clock.png">
-        </a>
-        <a href="#" class="menu-item menu-on" id="client" onclick="paramChange('menu', 'bag')">
-            <img class="menu-icon" src="ico/boxes.png">
-        </a>
-        <a href="#" class="menu-item" id="list" onclick="paramChange('menu', 'cart')">
-            <img class="menu-icon" src="ico/settings.png">
-        </a>
-    </div>
-
-    <div class="center">
+    
+    <div class="no-center">
         <div>
             <label  for="start">Выберете дату:</label>
                 <input class="light11" type="date" id="start" name="trip-start" value="2020-09-16">
         </div>
 
         <div>
-            <a class="neworder">Выберете удобное время:</a>
+            <a class="no-neworder">Выберете удобное время:</a>
         </div>
              <div>
-                <a class="neworder">С</a>
+                <a class="no-neworder">С</a>
                     <input type="time">
-                <a class="neworder">По</a>
+                <a class="no-neworder">По</a>
                     <input type="time">
             </div>
         
         <div>
-            <a class="neworder">Тип работ:</a>
-                <select class="neworder light15" name="type of work">
+            <a class="no-neworder">Тип работ:</a>
+                <select class="no-neworder light15" name="type of work">
                     <option value="r1">Подсобные работы</option>
                     <option value="r2">Погрузка бытовой мебели</option>
                     <option value="r3">Погрузка мебели при переезде</option>
@@ -53,26 +41,44 @@
         </div>
 
         <div>
-            <a class="neworder">Примечание (при необходимости)</a>
-            <textarea class="areaedit" placeholder="Введите текст..." rows="4" cols="10" name="text"></textarea>
+            <a class="no-neworder">Примечание (при необходимости)</a>
+            <textarea class="no-area" placeholder="Введите текст..." rows="4" cols="10" name="text"></textarea>
         </div>
         
         <div>  
-            <p class="neworder">Сколько человек Вам требуется?:</p>
-
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                <input type="number" min="1" max="100" value="1" readonly class="raz">
-                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            <p class="no-neworder">Сколько человек Вам требуется?:</p>
+                <div class="plus"><span>+</span></div>
+                <!-- <button type="button" onclick="this.nextElementSibling.stepDown()">-</button> -->
+                <span class="result">1</span>
+                <!-- <button type="button" onclick="this.previousElementSibling.stepUp()">+</button> -->
+                <div class="minus"><span>-</span></div>
         </div>
         
         <div>  
-            <p class="neworder">Сколько человек Вам требуется?:</p>
+            <p class="no-neworder">Предложите свою цену:</p>
 
             <form><input type="number" step="0.01" min="0" placeholder="0,00"> ₽</form>  
         </div>
+   
+
+    <div>
+        <a href="search.html" class="no-button">Готово</a>
     </div>
+</div>
 
-    <p href=""></p>
+<div class="mpf-menu">
 
+    <a href="history.html" class="mpf-menu-item" id="send" onclick="paramChange('mpf-menu', 'history')">
+        <img class="mpf-menu-icon" src="ico/clock.png">
+    </a>
+    <a href="main-page-first.html" class="mpf-menu-item menu-on" id="client" onclick="paramChange('mpf-menu', 'orders')">
+        <img class="mpf-menu-icon" src="ico/boxes.png">
+    </a>
+    <a href="settings.html" class="mpf-menu-item" id="list" onclick="paramChange('mpf-menu', 'settings')">
+        <img class="mpf-menu-icon" src="ico/settings.png">
+    </a>
+</div>
+
+    <script src="script/neworder.js"></script>
 </body>
 </html>

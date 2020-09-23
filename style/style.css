@@ -1,186 +1,204 @@
-    html, body {
-        background: linear-gradient(white, #DADADA) fixed;
+html {
+        background: linear-gradient(white, #DADADA);
         box-sizing: border-box;
         min-height: 100vh;
-        /*overflow: hidden;*/
         margin: 0px;
         font-family: 'Roboto';
-        overflow-x: hidden;
-        } 
-
-
-        /*ХЗ зачем, для центровки видимо*/
-.wrapper {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    flex-grow: 1;
+} 
+body{
+    margin: 0px;
 }
-        /*Лого при запуске*/
-.main-logo {
+
+    *:not(html) {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+
+    /*INDEX.html*/
+
+/*Лого при запуске*/
+.index-main-logo {
     text-align: center;
-    }
-        /*Отсуп прелоудера от логотипа*/
-.main-logo img{
+}
+/*Отсуп прелоудера от логотипа*/
+.index-main-logo img{
     margin-top: 70px;
-}
-        /*картинка на главной странице*/
-.bgimg {
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 140px;
-    z-index: 1000;
+} 
+    /*END INDEX.html*/
 
-}
-.bgimg-img {
-    width: 100px;
-    min-width: 100px;
-    max-width: 300px;
-}
+    /*CHOICE.html*/
 
-        /*Центровка второй страницы*/
+/*Центровка второй страницы*/
 .choice {
     text-align: center;
-        
-        /*Желтая рамка на второй странице*/
+    margin: 16px;  
 }
-.block {
+
+/*Желтая рамка на второй странице*/
+ .block {
     border: 8px solid #FFCC00;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     width:272px;
     height:184px;
-    margin-top: 10px;
-   position: relative;
-}
-        /*Картинка 1 в желтой рамке*/
-.block1{
-    background: url(../img/chel.png);
+    margin-top: 20px;
+    position: relative;
 }
 
-        /*Картинка 2 в желтой рамке*/
-.block2 {
-    background: url(../img/gr.png) no-repeat;
+/*Картинка 1 в желтой рамке*/
+.choise-block1-img{
+    width: 272px;
+    height: 184px;
+    border-radius: 12px;
+    opacity: 0.8;
 }
 
-        /*Правильное расположение блоков второй страницы*/
+/*Картинка 2 в желтой рамке*/
+
+.choise-block2-img {
+    width: 272px;
+    height: 184px;
+    border-radius: 12px;
+    opacity: 0.8;
+}
+
+/*Правильное расположение блоков второй страницы*/
 .block span{
-   position: absolute;
-   left: 50%;
-   top: 35%;
-   transform: translateY(-50%);
-   transform: translateX(-50%);
-   background-color: #FFCC00;
-   border-radius: 12px;
-   opacity: 0.9;
-   padding: 13px 5px;
-   text-decoration: none;
-   min-width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background-color: #FFCC00;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 13px 5px;
+    text-decoration: none;
+    min-width: 150px;
+    font-weight: bold;
 }
-        /*Текст*/
-.text{
+
+/*Текст*/
+
+.index-text {
     font-family: 'Roboto';
     color: #2F40D8;
 }
-.texth {
-    color: black;
-}
 
-.textd {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-}
+    /*END CHOICE.html*/
 
-.textw{
-    font-family: 'Roboto';
-    color: #ffffff;
-    text-decoration-color: #ffffff;
-}
-    /*Стиль на кнопки*/
-   .knop {
-    border: 1px solid #2F40D8; /* Рамка */
-    border-radius: 20px;
-    display: inline-block;
-    padding: 5px 15px; /* Поля */
-    text-decoration: none; /* Убираем подчёркивание */
-    background: #2F40D8;
-    color: #ffffff; /* Цвет текста */
-  }
-   .knop:hover {
-    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Тень */
-    background: #2F40D8;
-    padding: 5px 15px;
-}
-    /*Размещение кнопок на странице*/
-    .knopHis{
-        margin-left: 10px;
-    }
+    /*NEED.html*/
 
-    .knoplc{
-        float: right;
-        margin-right: 10px;
-    }
-
-    .knopcenter {
-        text-align: center;
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-   
-
-.please{
+.need-please {
     text-align: center;
     color: #000;
     display: inline-block;
     vertical-align: middle;
     margin: 8px;
+    }
+
+.need-center>div {
+    margin: 12px;
 }
 
-.neworder {
-    font-family: 'Roboto' Arial, Helvetica, sans-serif;
-    color: #000;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.FIO {
+.need-FIO {
     background-color: rgb(196, 187, 218);
     border-bottom: 3px #2F40D8 solid;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     padding: 5px;
 }
-
-.FIO label{
+    
+.need-FIO label{
     display: block;
 }
 
-.pole {
-    background-color: rgb(196, 187, 218); 
-    border: none;
+/*Текст*/
+
+.need-text {
+    font-family: 'Roboto';
+    color: #2F40D8;
 }
 
-.error{
+.need-pole {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+}
+
+.need-error{
     color: rgb(224, 14, 14);
     padding: 5px 0px 0px 10px;
 }
 
-.center>div{
+.need-text-dec {
+    text-decoration-color: #2F40D8;
+}
+
+/*Стиль на кнопки*/
+.need-button {
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.need-button:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Тень */
+    background: #2F40D8;
+    padding: 5px 15px;
+}
+
+    /*END NEED.html*/
+
+    /*GRUZ.html*/
+    /*END GRUZ.html*/
+
+    /*CONTRACT.html*/
+.contr-center>div {
     margin: 12px;
 }
 
-button{
-    width: 100px;
+.contr-text-title {
+    text-align: center;
 }
-  
-  /* Нижнее Меню */
 
-.menu {
+.contr-text {
+    text-align: justify;
+}
+
+ /*Стиль на кнопки*/
+.contr-button {
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+    /*END CONTRACT.html*/
+
+    /*MAIN-PAGE-FIRST.html*/
+
+/* Нижнее Меню */
+
+.mpf-center {
+    margin: 58px;
+}
+
+.mpf-menu {
     display: flex;
     justify-content: space-around;
     height: 65px;
@@ -190,9 +208,9 @@ button{
     position: fixed;
     bottom: 0;
     z-index: 5;
-}
+    }
 
-.menu a {
+.mpf-menu a {
     display: flex;
     text-decoration: none;
     width: 44px;
@@ -200,47 +218,666 @@ button{
     margin-top: 8px;
 }
 
-.menu-on {
+.mpf-menu-on {
     border-bottom: 2px solid #2F40D8;
 }
 
-.menu-icon {
+.mpf-menu-icon {
     height: 28px;
     width: 28px;
     margin: auto;
 }
 
-.menu-iconp:hover {
+.mpf-menu-iconp:hover {
     box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Тень */
     background: #2F40D8;
     padding: 5px 15px;
 }
 
-/*Дата и Время*/
-
-label {
+/*картинка на главной странице*/
+.bgimg {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
     display: block;
-    font: 1rem 'Roboto' 'Fira Sans', sans-serif;
+}
+.bgimg-img {
+    width: 100px;
+    min-width: 100px;
+    max-width: 300px;
+   
 }
 
-input,
-label {
-    margin: .4rem 0;
+.mpf-main{
+    text-align: center;
+}
+
+.mpf-main-empty{
+    display: inline-block;
+}
+
+.mpf-main-empty-item{
+    display: block;
+    color: #000;
+    margin: 8px;
+}
+
+ /*Стиль на кнопки*/
+ .mpf-batton {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff; /* Цвет текста */
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+.mpf-batton-center {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 17px;
+}
+
+    /*END MAIN-PAGE-FIRST.html*/
+
+    /*NEWORDER.html*/
+
+.no-center>div {
+    margin: 12px;
+}
+
+.no-neworder {
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+        
+}
+    
+.plus{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: green;
+    display: inline-block;
+    text-align: center;
+}
+    
+.minus{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+    
+.result{
+    font-size: 24px;
+    text-align: center;
+    margin: 0px 20px;
+}
+ 
+
+/*Стиль на кнопки*/
+.no-button {
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /*textarea*/
-
-.areaedit {
+    
+.no-area {
     width: 60%;
     padding: 10px;
-}     
+}  
+
 /*Выбор количества рабочих*/           
 .raz {
     all: unset;
     -moz-appearance: textfield;
-    width: 3em;
+     width: 3em;
     text-align: center;
-  }
-  .raz::-webkit-inner-spin-button { 
+}
+.raz::-webkit-inner-spin-button { 
     display: none;
-  }              
+}              
+   
+    /*END NEWORDER.html*/
+
+    /*SEARCH.html*/
+
+.se-center {
+    margin: 12px;
+}
+
+.se-status-call{
+    text-align: center;
+}
+
+.se-status-c {
+    display: block;
+    text-align: center;
+    margin:10px;
+    color: #2F40D8;
+}
+
+.se-status-с-nt {
+    background:  #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+    border: none;
+
+}
+
+.se-status-j {
+    display: block;
+    text-align: justify;
+    margin: 10px 10px;
+}
+
+.se-status-nt-p {
+    background:  #FFCC00;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+
+}
+ 
+.se-status-r {
+    display: inline-block;
+    margin: 10px;
+    float: right;
+}
+.se-status-l {
+    display: inline-block;
+    margin: 10px;
+}
+
+.se-center>input::placeholder{
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif ;
+}
+
+.se-button {
+    border: none; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff;
+    text-align: center; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.se-botton-r {
+    display: inline-block;
+    
+    float: right;
+}
+.se-botton-l {
+    display: inline-block;
+    
+}
+.se-botton-c {
+    display: inline-block;   
+    float: right;
+    margin-top: 10px;
+    background: #ff0000;
+}
+    /*END SEARCH.html*/
+
+    /*EXPECTATION.html*/
+
+.ex-center {
+    margin: 12px;
+}
+
+.ex-status-c {
+    display: block;
+    text-align: center;
+    margin:10px;
+    color: #2F40D8;
+}
+
+.ex-status-call{
+    text-align: center;
+}
+
+.ex-status-с-nt {
+    background:  #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+    border: none;
+
+}
+
+.ex-status-j {
+    display: block;
+    text-align: justify;
+    margin: 10px 10px;
+}
+
+.ex-status-nt-p {
+    background:  #FFCC00;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+
+}
+ 
+.ex-status-r {
+    display: inline-block;
+    margin: 10px;
+    float: right;
+}
+.ex-status-l {
+    display: inline-block;
+    margin: 10px;
+}
+
+.ex-center>input::placeholder{
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif ;
+}
+
+.ex-button {
+    border: none; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff;
+    text-align: center; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.ex-botton-r {
+    display: inline-block;
+    float: right;
+}
+
+.ex-botton-l {
+    display: inline-block;
+    
+}
+.ex-botton-cancel {
+    display: inline-block;   
+    float: right;
+    margin-top: 10px;
+    background: #ff0000;
+}
+
+    /*END EXPECTATION.html*/
+
+    /*GRUZ-CANCEL-ORDER.html*/
+.grCO-center {
+    margin: 12px;
+}
+
+.grCO-status-call {
+    text-align: center;
+}
+
+.grCO-status-c {
+    display: block;
+    text-align: center;
+    margin:10px;
+    color: #2F40D8;
+}
+    
+.grCO-status-с-nt {
+    background:  #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+    border: none;
+    
+}
+    
+.grCO-status-j {
+    display: block;
+    text-align: justify;
+    margin: 10px 10px;
+}
+    
+.grCO-status-nt-p {
+    background:  #FFCC00;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+}
+     
+.grCO-status-r {
+    display: inline-block;
+    margin: 10px;
+    float: right;
+}
+.grCO-status-l {
+    display: inline-block;
+    margin: 10px;
+}
+    
+.grCO-center>input::placeholder{
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif ;
+}
+    
+.grCO-button {
+    border: none; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff;
+    text-align: center; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+    
+.grCO-botton-r {
+    display: inline-block;
+    float: right;
+}
+.grCO-botton-l {
+    display: inline-block;
+}
+.grCO-botton-c {
+    display: inline-block;   
+    float: right;
+    margin-top: 10px;
+    background: #ff0000;
+}    
+
+
+    /*END GRUZ-CANCEL-ORDER.html*/
+
+    /*FOUND-EXECUTOR.html*/
+
+.fo-center {
+    margin: 12px;
+}
+    
+.fo-status-c {
+    display: block;
+    text-align: center;
+    margin:10px;
+    color: #2F40D8;
+}
+    
+.fo-status-с-nt {
+    background:  #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+    border: none;
+}
+    
+.fo-status-j {
+    display: inline-block;
+    margin: 18px 10px;
+}
+
+.fo-status-jw {
+    display: block;
+    margin: 10px 10px;
+    text-align: left;
+}
+    
+.fo-status-nt-p {
+    background:  #FFCC00;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+    
+}
+     
+.fo-status-r {
+    display: inline-block;
+    margin: 10px;
+    float: right;
+}
+.fo-status-l {
+    display: inline-block;
+    margin: 10px;
+}
+    
+.fo-center>input::placeholder{
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif ;
+}
+    
+.fo-button {
+    border: none; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff;
+    text-align: center; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+    
+.fo-botton-r {
+    display: inline-block;
+    float: right;
+}
+    
+.fo-botton-l {
+    display: inline-block;
+}
+
+.fo-botton-cancel {
+    display: inline-block;   
+    float: right;
+    margin-top: 10px;
+    background: #ff0000;
+}
+
+.fo-pictr {
+    width: 100px;
+    display: inline-block;
+       position: absolute;
+       top: 0px;
+       right: 20px;
+       margin-top: 10px;
+}
+
+
+    /*END FOUND-EXECUTOR.html*/
+
+    /*APP-COMPLET.html*/
+
+.app-center {
+    margin: 12px;
+}
+        
+.app-status-c {
+    display: block;
+    text-align: center;
+    margin:10px;
+    color: #2F40D8;
+}
+        
+.app-status-с-nt {
+    background:  #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+    border: none;
+}
+        
+.app-status-j {
+    display: inline-block;
+    margin: 10px 10px;
+}
+    
+.app-status-jw {
+    display: block;
+    margin: 10px 10px;
+    text-align: left;
+}
+        
+.app-status-nt-p {
+    background:  #FFCC00;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 8px 8px;
+        
+}
+         
+.app-status-r {
+    display: inline-block;
+    margin: 10px;
+    float: right;
+}
+.app-status-l {
+    display: inline-block;
+    margin: 10px;
+}
+        
+       
+.app-button {
+    border: none; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    background: #2F40D8;
+    color: #ffffff;
+    text-align: center; /* Цвет текста */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+        
+.app-botton-r {
+display: inline-block;
+float: right;
+
+}
+        
+.app-botton-l {
+display: inline-block;
+
+}
+    
+.app-botton-end {
+    display: inline-block;   
+    float: right;
+    margin-top: 10px;
+    background: #FFCC00;
+}
+    
+.app-pictr {
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin-top: 10px;
+}
+
+/*textarea*/
+    
+.app-area {
+    width: 80%;
+    padding: 10px;
+    border: none;
+}  
+
+/*Выбор количества рабочих*/           
+.app-size {
+    all: unset;
+    -moz-appearance: textfield;
+     width: 3em;
+    text-align: center;
+}
+.app-size::-webkit-inner-spin-button { 
+    display: none;
+} 
+
+
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 50px;
+	line-height: 50px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: #FFCC00;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #FFCC00;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #FFCC00;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+    /*END APP-COMPLET.html*/
